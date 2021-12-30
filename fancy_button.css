@@ -14,3 +14,13 @@ button{
     color: #a0187e;
     border: 2px solid 
 }
+
+button:hover span{
+    display: none;
+    color: #d69fc8;
+    border-color: #fd12c2;
+}
+
+button:hover:before {
+    content: "Hover Me! 🙈"
+  }
