@@ -7,20 +7,34 @@ body {
     background-color: #0b0f23;
   }
 
-button{
-    background: none;
+span{
     font-size: 3em;
-    padding: 1em 2em;
+    padding: 0.2em 0.2em;
+}
+
+button{
+    padding: 0px 0px;
+    background: none;
     color: #a0187e;
-    border: 2px solid 
+    border: 2px solid;
+    transition: all 1s;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.25s;
 }
 
 button:hover span{
     display: none;
-    color: #d69fc8;
-    border-color: #fd12c2;
 }
 
 button:hover:before {
-    content: "Hover Me! 🙈"
-  }
+    border-color: #fc72da;
+    font-size: 3em;
+    padding: 0.2em 0.2em;
+    content: "Hover Me! 🙈";
+    color: #d69fc8;
+    box-shadow: 0 0.5em 2em -0.4em #e835b5;
+    cursor: pointer;
+  
+
+    
+    
+}
